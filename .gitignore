@@ -1,0 +1,10 @@
+.vscode
+.git
+__pycache__
+.idea/
+
+# ignore diff files
+**/*.diff
+
+# ignore pytest
+**.pytest*
