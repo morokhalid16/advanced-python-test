@@ -1,4 +1,12 @@
 # Test data-engineer python
+## Before starting
+ * Fork the project in your namespace
+ * Change project visibility (Settings, General, click on `Visibility, project features, permissions` change project visibility from public to private)
+## After you push your codes
+ * add it@dataimpact.fr as **reporter** in settings, members
+ * answer the email with the project link in it 
+ 
+# Test
 Some really important tips:
  * Comments and tests are a big plus
  * You might need pytest
