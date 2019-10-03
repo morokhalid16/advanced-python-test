@@ -1,16 +1,16 @@
 # Test data-engineer python
 ## Before starting
  * Fork the project in your namespace
- * Change project visibility (Settings, General, click on `Visibility, project features, permissions` change project visibility from public to private)
-## After you push your codes
- * add it@dataimpact.fr as **reporter** in settings, members
- * answer the email with the project link in it 
+ * **Caution! very important:** Change project visibility (Settings, General, click on `Visibility, project features, permissions` change project visibility from public to private)
+## After pushing your codes
+ * Add it@dataimpact.fr as **reporter** in `settings, members`
+ * Answer the email with your project link in it 
  
 # Test
 Some really important tips:
  * Comments and tests are a big plus
- * You might need pytest
- * There are three parts (algorithm, advance, data) you can choose to skip one 
+ * You might need pytest (and you can use any other package)
+ * There are three parts (algorithm, advance, data) you can choose to skip one.
  * You can use internet
  
 
@@ -93,7 +93,7 @@ create a metaclass that checks if classes have an attribute named 'process' whic
 ## Third Part (data)
 *You can use pandas in this part*
 
-### Exercice 1
+### Exercice 1 (15 min)
 
 In the `third_part/data` directory you'll find a compressed json file named "products.json.gz".
 That file contains a list of products defined as objects, each product object contains infomation relevant to a specific product.
@@ -112,4 +112,60 @@ That file contains a list of products defined as objects, each product object co
   2) Write a function called `clean_cat` that can remove the NULL fields of each category
   (*For example when calling clean_cat on "2076,3B,19C,138D,NULL,NULL" the output should be "2076,3B,19C,138D".*)
   3) Apply this function to all products
+
+## Exercise 2 (35 min)
++    **The files are located in third_part/data**
++    **There is two shops' data and one file with an extract of our asset data repository**
+
+
+1) Import raw data from shops
+
+|refenseigne|refmagasin|categorieenseigne|prixproduit|prixunitaireproduit|prixproduitsansreduction|identifiantproduit|promotion|promotiontexte|ean|position|disponible|nouveau|
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|8|3880|"Offres spéciales|Promotions"|5.85|0.15|9.75|85061|1|Réduction immédiate de 40%|NaN|1|NaN|NaN|
+|8|3880|"Offres spéciales|Promotions"|2.17|9.77|4.35|51605|1|Réduction immédiate de 50%|NaN|2|NaN|NaN|
+|8|3880|"Offres spéciales|Promotions"|5.80|11.60|5.80|61289|1|Le 3ème est gratuit, profitez-en !|NaN|3|NaN|NaN|
+|8|3880|"Offres spéciales|Promotions"|5.80|11.60|5.80|78386|1|Le 3ème est gratuit, profitez-en !|NaN|4|NaN|NaN|
+|8|3880|"Offres spéciales|Promotions"|2.32|4.64|4.65|3700|1|Réduction immédiate de 50%|NaN|5|NaN|NaN|
+
++ **refenseigne => Retailer's id**
++ **refmagasin => Shop's id**
++ **categorieenseigne => Retailer's products' categorization - Category where the prodcut was scrapped**
++ **prixproduit => Product price in the shop**
++ **prixunitaireproduit => Unit price of the product in the shop** - Useless in the test
++ **prixproduitsansreduction => Price of the product in the shop whithout discount** - Useless in the test
++ **identifiantproduit => Product's id in the shops**
++ **promotion => Dataimpact's promotion id** - Useless in the test
++ **promotiontexte => Product's promotional text in the shop** - Useless in the test
++ **ean => Product's EAN** - Useless in the test
++ **position => Product's position on the scrapped page** - Useless in the test
++ **disponible => Product's availability** - Useless in the test
++ **nouveau => Has the product been scrapped on the "New products" page of the shops** - Useless in the test
+
+2) Import our asset data repository
+
+|pe_ref_in_enseigne | pe_id | p_id_cat|
+|---|---|---|
+|35143 | 400479 | 1481E|
+|7428 | 413257 | 116D|
+|19197 | 413258 |1318E|
+|6420 | 413259 | 2003E|
+|24668 | 413260 | 253D|
+
++ **pe_ref_in_enseigne => Products id in the shops**
++ **pe_id => Dataimpact's products id**
++ **p_id_cat => Dataimpact's products' categorization's id**
+
+3) Merge the data from the shops with the data from our asset data repository. (write the `import_raw_data` and `process_data` functions)
+
+## Exercise 3 (15 min)
+Average the prices of the products from the two days of the shop you processed. (write the `average_prices` function)
+
+    The resulting file should be a CSV with the id of the products in one column and the price average in another one
+
+
+## Exercise 4 (15 min)
+Count how many products there is in each Dataimpact's category and each retailer's category by day. (write the `count_products_by_categories_by_day` function)
+Average the numbers of products by Dataimpact's category and by retailer's category on both days. (write the `average_products_by_categories` function)
+
 
