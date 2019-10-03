@@ -10,7 +10,7 @@
 Some really important tips:
  * Comments and tests are a big plus
  * You might need pytest (and you can use any other package)
- * There are three parts (algorithm, advance, data) you can choose to skip one.
+ * There are three parts (algorithm, advanced, data) you can choose to skip one.
  * You can use internet
  
 
@@ -78,16 +78,17 @@ Rewrite decorator_check_max_int to force the function "add" not to return values
 
 ### Exercise 3 (10 min)
 
-Rewrite ignore_exception so that it ignores the exception in its argument and returns None if this exception raises
+Rewrite `ignore_exception` so that it ignores the exception in its argument and returns None if this exception raises
 
 ### Exercise 4 (20 min)
 
-Test the class `CacheDecorator` without touching it, some of your tests may not pass because the class is bugged
+Write the tests for the class `CacheDecorator` without touching it, some of your tests should not pass because this class is a little buggy. 
 
 ### Exercise 5 (10 min)
-Write the metaclass MetaInherList like ForceToList inherits from list
 
-### Exercise 6 (15)
+Write the metaclass `MetaInherList` so that the class `ForceToList` inherits from `list` built-in. (read `test_meta_list` in the tests for more information)
+
+### Exercise 6 (15 min)
 create a metaclass that checks if classes have an attribute named 'process' which must be a method taking 3 arguments
 
 ## Third Part (data)
@@ -108,14 +109,14 @@ That file contains a list of products defined as objects, each product object co
     "categorieenseigne" : ""
 }
 ```
-  1) Read the json file. Parse it and store it a variable called product_list
+  1) Read the json file. Parse it and store it in a variable called product_list
   2) Write a function called `clean_cat` that can remove the NULL fields of each category
   (*For example when calling clean_cat on "2076,3B,19C,138D,NULL,NULL" the output should be "2076,3B,19C,138D".*)
   3) Apply this function to all products
 
 ## Exercise 2 (35 min)
 +    **The files are located in third_part/data**
-+    **There is two shops' data and one file with an extract of our asset data repository**
++    **There are two shops' data and one file with an extract of our asset data repository**
 
 
 1) Import raw data from shops
@@ -130,7 +131,7 @@ That file contains a list of products defined as objects, each product object co
 
 + **refenseigne => Retailer's id**
 + **refmagasin => Shop's id**
-+ **categorieenseigne => Retailer's products' categorization - Category where the prodcut was scrapped**
++ **categorieenseigne => Retailer's products' categorization - Category where the product was scrapped**
 + **prixproduit => Product price in the shop**
 + **prixunitaireproduit => Unit price of the product in the shop** - Useless in the test
 + **prixproduitsansreduction => Price of the product in the shop whithout discount** - Useless in the test
