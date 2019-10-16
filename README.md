@@ -93,7 +93,7 @@ Write the tests for the class `CacheDecorator` without touching it, some of your
 Write the metaclass `MetaInherList` so that the class `ForceToList` inherits from `list` built-in. (read `test_meta_list` in the tests for more information)
 
 ### Exercise 6 (15 min)
-create a metaclass that checks if classes have an attribute named 'process' which must be a method taking 3 arguments
+Create a metaclass that checks if classes have an attribute named 'process' which must be a method taking 3 arguments
 
 ## Third Part (data)
 *You can use pandas in this part*
@@ -120,7 +120,7 @@ That file contains a list of products defined as objects, each product object co
 
 ## Exercise 2 (35 min)
 +    **The files are located in third_part/data**
-+    **There are two shops' data and one file with an extract of our asset data repository**
++    **There is data for two shops and one file with an extract of our asset data repository**
 
 
 1) Import raw data from shops
@@ -170,7 +170,7 @@ Average the prices of the products from the two days of the shop you processed. 
 
 
 ## Exercise 4 (15 min)
-Count how many products there is in each Dataimpact's category and each retailer's category by day. (write the `count_products_by_categories_by_day` function)
-Average the numbers of products by Dataimpact's category and by retailer's category on both days. (write the `average_products_by_categories` function)
+Count how many products there are in each Dataimpact category and each retailer's category by day. (write the `count_products_by_categories_by_day` function)
+Average the numbers of products by Dataimpact category and by retailer category on both days. (write the `average_products_by_categories` function)
 
 
