@@ -127,11 +127,11 @@ That file contains a list of products defined as objects, each product object co
 
 |refenseigne|refmagasin|categorieenseigne|prixproduit|prixunitaireproduit|prixproduitsansreduction|identifiantproduit|promotion|promotiontexte|ean|position|disponible|nouveau|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
-|8|3880|"Offres spéciales|Promotions"|5.85|0.15|9.75|85061|1|Réduction immédiate de 40%|NaN|1|NaN|NaN|
-|8|3880|"Offres spéciales|Promotions"|2.17|9.77|4.35|51605|1|Réduction immédiate de 50%|NaN|2|NaN|NaN|
-|8|3880|"Offres spéciales|Promotions"|5.80|11.60|5.80|61289|1|Le 3ème est gratuit, profitez-en !|NaN|3|NaN|NaN|
-|8|3880|"Offres spéciales|Promotions"|5.80|11.60|5.80|78386|1|Le 3ème est gratuit, profitez-en !|NaN|4|NaN|NaN|
-|8|3880|"Offres spéciales|Promotions"|2.32|4.64|4.65|3700|1|Réduction immédiate de 50%|NaN|5|NaN|NaN|
+|8|3880|"Offres spéciales\|Promotions"|5.85|0.15|9.75|85061|1|Réduction immédiate de 40%|NaN|1|NaN|NaN|
+|8|3880|"Offres spéciales\|Promotions"|2.17|9.77|4.35|51605|1|Réduction immédiate de 50%|NaN|2|NaN|NaN|
+|8|3880|"Offres spéciales\|Promotions"|5.80|11.60|5.80|61289|1|Le 3ème est gratuit, profitez-en !|NaN|3|NaN|NaN|
+|8|3880|"Offres spéciales\|Promotions"|5.80|11.60|5.80|78386|1|Le 3ème est gratuit, profitez-en !|NaN|4|NaN|NaN|
+|8|3880|"Offres spéciales\|Promotions"|2.32|4.64|4.65|3700|1|Réduction immédiate de 50%|NaN|5|NaN|NaN|
 
 + **refenseigne => Retailer's id**
 + **refmagasin => Shop's id**
